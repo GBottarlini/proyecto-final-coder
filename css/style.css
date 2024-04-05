@@ -16,6 +16,19 @@ header {
 
 }
 
+.custom-navbar-toggler {
+    background-color:#5A5A5A;/* Cambia el color de fondo del botón */
+    border-color: #AA9A69; /* Cambia el color del borde del botón */
+}
+
+.navbar-brand {
+    width: 70%; /* Ajusta el ancho del logo */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem;
+}
+
 .img-inicio{
     width: 100%;
     height: auto;
@@ -38,9 +51,6 @@ header {
     margin-right: 20px;
 }
 
-#navbarSupportedContent .navbar-nav{
-    gap: 10px;
-}
 
 .nav-item{
     list-style:none ;
@@ -347,10 +357,27 @@ h1, h2{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
+@media screen and (max-width: 768px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .mapa{
+        grid-column: 1;
+        grid-row: 2;
+    }
+}
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
+/*# sourceMappingURL=style.css.map */
