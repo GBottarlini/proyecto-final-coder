@@ -1,0 +1,15 @@
+// IMPORT
+@import "../abstracts/variables";
+@import "../abstracts/_mixins";
+
+/* ESTILOS GENERALES */
+
+body {
+    background-color: $bg-color;
+    font-family: sans-serif;
+}
+
+h1 {
+    @include center;
+    margin-top: 20px;
+}

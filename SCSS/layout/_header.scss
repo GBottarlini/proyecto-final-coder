@@ -1,0 +1,68 @@
+/* ESTILOS DE HEADER */
+
+// IMPORT
+@import "../abstracts/variables";
+@import "../abstracts/_mixins";
+
+/* ESTILO DE HEADER */
+
+header  {
+    background-color: $color-fondo;
+    @include center;
+    padding: 10px;
+}
+
+/* ESTILO DE BARRA DE NAVEGACIÓN */
+
+.custom-navbar-toggler {
+    background-color: #5A5A5A; /* Color de fondo del botón */
+    border-color: #AA9A69; /* Color del borde del botón */
+}
+
+.navbar-brand {
+    width: 70%;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 1.5rem;
+}
+
+.img-inicio {
+    width: 100%;
+    height: auto;
+}
+
+.navbar{
+    background-color: $color-fondo;
+    margin: 0;
+    padding: 0;
+        ul{
+            li{
+                a{
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 20px;
+                    &:hover {
+                        background-color: $color-detalles;
+                    }
+                }
+            }
+        }
+}
+
+.container-fluid {
+    background-color: $color-fondo;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.logoTipo {
+    width: 10%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.nav-item {
+    list-style: none;
+}
+

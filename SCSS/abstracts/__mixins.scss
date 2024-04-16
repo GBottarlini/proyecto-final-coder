@@ -1,0 +1,37 @@
+// MIXIN MEDIDAS ESTÁNDAR
+
+@mixin tamaño {
+    width: 100%;
+    height: auto;
+}
+
+// MIXIN PARA CENTRAR 
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// MIXIN PARA CENTRAR TEXTOS
+
+@mixin text-center {
+    align-items: center;
+    text-align: center;
+}
+
+// MIXIN DISEÑO DE BOTÓN
+
+@mixin boton-estilo {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(202, 177, 113, 0.89);
+    }
+}

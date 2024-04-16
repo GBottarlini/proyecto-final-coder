@@ -1,0 +1,70 @@
+
+
+/* ESTILOS SECCIÓN DE CONTACTO */
+
+h1, h2{
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    margin: 30px;
+    align-items: center;
+    justify-items: center;
+
+    .formulario {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .grid-item .img-contacto {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        height: auto;
+    }
+
+    // Estilos adicionales para el formulario 
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    // Estilos para el botón del formulario
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgba(202, 177, 113, 0.89);
+        }
+    }
+}
+
+/* MEDIA QUERIES DE LA SECCIÓN CONTACTO*/
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+
+        .grid-item .img-contacto {
+            grid-column: 1;
+            grid-row: 2;
+        }
+    }
+}
