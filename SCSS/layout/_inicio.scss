@@ -1,0 +1,48 @@
+// IMPORT
+@import "../abstracts/variables";
+@import "../abstracts/_mixins";
+
+
+/* ESTILOS PARA SECCIÓN DE INICIO */
+@font-face {
+    font-family: "fuente-inicio";
+    src: url(../fuente/SantEliaRoughAlt-BoldThrDEMO.otf);
+}
+
+body {
+    .tituloIni{
+        font-family: "fuente-inicio", sans-serif; 
+        position:absolute;
+        width: 50ch;
+        top: 50%;  
+        left: 50%;  
+        transform: translate(-50%, -60%); 
+        color: $color-detalles;
+    }
+    .subTituloIni{
+        font-family: "fuente-inicio", sans-serif; 
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 70%); 
+        color: rgb(245, 245,245,0.8);
+    }
+    .img-inicio {
+        background-image: url("../img/portada-inicio.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+}
+
+@media (min-width:768px) {
+    body {
+        .img-inicio {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
