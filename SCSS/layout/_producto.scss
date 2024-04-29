@@ -13,8 +13,8 @@
         display: grid;
         grid-template-rows: auto 1fr auto;
         gap: 20px;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         text-align: center;
         .textosUno {
             h2 {
@@ -32,13 +32,16 @@
             }
             p {
                 @include text-center;
+                white-space: nowrap; // Evita que el texto se desborde a una nueva línea
+        overflow: hidden; // Oculta cualquier contenido que se desborde
+        text-overflow: ellipsis
             }
         }
         .imgUno {
             img {
                 max-width: 100%;
                 height: auto;
-                object-fit: contain;
+                object-fit: cover;
                 border: 1px solid #ccc;
                 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             }
@@ -59,13 +62,16 @@
             }
             p {
                 @include text-center;
+                white-space: nowrap; // Evita que el texto se desborde a una nueva línea
+        overflow: hidden; // Oculta cualquier contenido que se desborde
+        text-overflow: ellipsis
             }
         }
         .imgDos {
             img {
                 max-width: 100%;
                 height: auto;
-                object-fit: contain;
+                object-fit: cover;
                 border: 1px solid #ccc;
                 box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
             }
@@ -77,6 +83,15 @@
 
 @media (max-width: 767px) {
     .productos {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+
+// MEDIA QUERIES PARA VERSION TABLET 
+@media (max-width: 850px) {
+    .productos {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-template-rows: auto auto 1fr;
     }
 }

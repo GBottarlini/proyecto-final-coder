@@ -60,13 +60,18 @@
 
 /* MEDIA QUERIES DE LA SECCIÓN UBICACIÓN*/
 
-@media screen and (max-width: 768px) {
-    .info {
-        grid-template-columns: 1fr;
-    }
+@media screen and (max-width: 1040px) {
+    .ubicacion {
+        grid-template-columns: 1fr; 
+        justify-content: center; /* Centrar los elementos horizontalmente */
+        
 
-    .mapa{
-        grid-column: 1;
-        grid-row: 2;
+        .info {
+            max-width: 80%; /* Ancho máximo del contenedor de información */
+        }
+
+        .mapa {
+            margin-top: 20px; /* Agregar un margen superior al mapa para separarlo */
+        }
     }
 }
