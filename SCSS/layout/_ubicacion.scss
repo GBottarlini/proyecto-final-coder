@@ -63,15 +63,15 @@
 @media screen and (max-width: 1040px) {
     .ubicacion {
         grid-template-columns: 1fr; 
-        justify-content: center; /* Centrar los elementos horizontalmente */
+        justify-content: center;
         
 
         .info {
-            max-width: 80%; /* Ancho máximo del contenedor de información */
+            max-width: 80%;
         }
 
         .mapa {
-            margin-top: 20px; /* Agregar un margen superior al mapa para separarlo */
+            margin-top: 20px;
         }
     }
 }

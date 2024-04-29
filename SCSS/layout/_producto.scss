@@ -13,8 +13,6 @@
         display: grid;
         grid-template-rows: auto 1fr auto;
         gap: 20px;
-        // align-items: center;
-        // justify-content: center;
         text-align: center;
         .textosUno {
             h2 {
@@ -32,9 +30,9 @@
             }
             p {
                 @include text-center;
-                white-space: nowrap; // Evita que el texto se desborde a una nueva línea
-        overflow: hidden; // Oculta cualquier contenido que se desborde
-        text-overflow: ellipsis
+                white-space: nowrap; 
+                overflow: hidden; 
+                text-overflow: ellipsis
             }
         }
         .imgUno {
@@ -62,9 +60,9 @@
             }
             p {
                 @include text-center;
-                white-space: nowrap; // Evita que el texto se desborde a una nueva línea
-        overflow: hidden; // Oculta cualquier contenido que se desborde
-        text-overflow: ellipsis
+                white-space: nowrap; 
+                overflow: hidden;
+                text-overflow: ellipsis
             }
         }
         .imgDos {
