@@ -31,8 +31,8 @@ header {
 
 /* ESTILO DE BARRA DE NAVEGACIÓN */
 .custom-navbar-toggler {
-  background-color: #5A5A5A; /* Color de fondo del botón */
-  border-color: #AA9A69; /* Color del borde del botón */
+  background-color: #5A5A5A;
+  border-color: #AA9A69;
 }
 
 .navbar-brand {
@@ -126,6 +126,11 @@ header {
   body {
     width: 100%;
     background-attachment: fixed;
+  }
+}
+@media (max-width: 767px) {
+  .container-ini {
+    margin-top: 65px;
   }
 }
 /* ESTILOS DE LA SECCIÓN NOSOTROS */
@@ -352,13 +357,13 @@ h1, h2 {
 @media screen and (max-width: 1040px) {
   .ubicacion {
     grid-template-columns: 1fr;
-    justify-content: center; /* Centrar los elementos horizontalmente */
+    justify-content: center;
   }
   .ubicacion .info {
-    max-width: 80%; /* Ancho máximo del contenedor de información */
+    max-width: 80%;
   }
   .ubicacion .mapa {
-    margin-top: 20px; /* Agregar un margen superior al mapa para separarlo */
+    margin-top: 20px;
   }
 }
 /* ESTILOS DE FOOTER */

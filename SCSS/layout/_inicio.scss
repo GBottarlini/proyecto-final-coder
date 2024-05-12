@@ -58,3 +58,10 @@
         background-attachment: fixed;
     }
 }
+
+
+@media (max-width: 767px) {
+    .container-ini {
+        margin-top: 65px;
+    }
+}
